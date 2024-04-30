@@ -1,13 +1,65 @@
-export const Skill_data = [
+
+export const Frontend_skill = [
   {
     skill_name: "HTML5",
     Image: "/html.png",
-    width: 80,
-    height: 80,
+    width: 90,
+    height: 90,
   },
   {
     skill_name: "CSS3",
     Image: "/css.png",
+    width: 90,
+    height: 90,
+  },
+  {
+    skill_name: "JavaScript",
+    Image: "/js.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Tailwind",
+    Image: "/tailwind.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "NextJS",
+    Image: "/next.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "ThreeJS",
+    Image: "/threeJS.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Bootstrap",
+    Image: "/bootstrap.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Angular",
+    Image: "/angular.png",
+    width: 80,
+    height: 80,
+  },
+];
+
+export const Skill_data = [
+  {
+    skill_name: "GitHub",
+    Image: "/github.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Git",
+    Image: "/git.png",
     width: 80,
     height: 80,
   },
@@ -71,72 +123,24 @@ export const Socials = [
   {
     name: "Instagram",
     src: "/instagram.png",
+    link: "https://www.instagram.com/oliveristhenamx/"
   },
   {
     name: "LinkedIn",
     src: "/linkedin.png",
+    link: "https://www.linkedin.com/in/oliver-fabian-stetcu-b24122196/"
   },
   {
     name: "GitHub",
     src: "/github.png",
-  },
-];
-
-export const Frontend_skill = [
-  {
-    skill_name: "HTML5",
-    Image: "/html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "CSS3",
-    Image: "/css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "JavaScript",
-    Image: "/js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind",
-    Image: "/tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Material UI",
-    Image: "/mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    Image: "/react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "TypeScript",
-    Image: "/ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "NextJS",
-    Image: "/next.png",
-    width: 80,
-    height: 80,
+    link: "https://github.com/ZiwiiDev/"
   },
 ];
 
 export const Backend_skill = [
   {
-    skill_name: "NodeJS",
-    Image: "/node-js.png",
+    skill_name: "PowerApps",
+    Image: "/powerapps.png",
     width: 80,
     height: 80,
   },
