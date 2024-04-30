@@ -1,7 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Gluten-BoldItalic';
+  src: url('/Gluten-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.style-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Gluten-BoldItalic";
+  line-height: 1;
+  font-style: italic, -moz-italic;
+  text-decoration: none;
+}
+
+.style-logo span {
+  color: white;
+  margin-left: 5px;
+}
+
+.style-logo-letter {
+  color: rgb(124, 115, 252) !important;
+}
+
+.gluten-bold-italic {
+  font-family: 'Gluten-BoldItalic', sans-serif;
+  font-size: 20px;
+}
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;

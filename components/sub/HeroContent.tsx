@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
 import { SparklesIcon } from '@heroicons/react/16/solid'
 import Image from 'next/image';
@@ -16,10 +16,10 @@ const HeroContent = () => {
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-start'>
             <motion.div
             variants={slideInFromTop}
-            className='Welcome-box py-[15px] px-[7px] border border-[#7042f88b] opacity-[0.9]'
+            className='Welcome-box py-[15px] px-[15px] border border-[#7042f88b] opacity-[0.9]'
             >
-                <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5' />
-                <h1 className='Welcome-text text-[13px]'>FullStack Developer</h1>
+                <SparklesIcon className='text-[#b49bff] mr-[10px] h-6 w-6'/>
+                <h1 className='Welcome-text text-[14px] font-bold'>FullStack Developer</h1>
             </motion.div>
 
             <motion.div
@@ -43,7 +43,7 @@ const HeroContent = () => {
             variants={slideInFromLeft(1)}
             className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
             >
-                Learn more!
+                Download CV
             </motion.a>
         </div>
 
