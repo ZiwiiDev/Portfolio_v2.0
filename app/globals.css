@@ -1,3 +1,5 @@
+/*---------------------------------------------------------------------------------------------*/
+/* Importo fuentes de Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
 @tailwind base;
@@ -5,48 +7,121 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Gluten-BoldItalic';
-  src: url('/Gluten-BoldItalic.ttf') format('truetype');
+  font-family: "Gluten-BoldItalic";
+  src: url("/Gluten-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
+/*---------------------------------------------------------------------------------------------*/
+:root {
+  /* Colores */
+  --primary-dark: black;
+  --shadow-color: #a48fff1f;
+  --shadow-button-color: #bf97ff3d;
+  --button-primary-hover: #bf97ff70;
+  --color-white: white;
+  --logo-first-letter-color: rgb(124, 115, 252);
 
+  /* Gradient */
+  --gradient-color: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
+  --gradient-button-primary: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.32) 100%
+    ),
+    rgba(113, 47, 255, 0.12);
+  --gradient-button-primary-hover: linear-gradient(
+      180deg,
+      rgba(60, 8, 126, 0) 0%,
+      rgba(60, 8, 126, 0.42) 100%
+    ),
+    rgba(113, 47, 255, 0.24);
+
+  /* Fuentes */
+  --primary-font: "Cedarville Cursive", cursive;
+  --logo-font: "Gluten-BoldItalic", sans-serif;
+  --font-weight: 600;
+  --font-size: 20px;
+
+  /* Border */
+  --border-radius: 14px;
+  --border-radius-webkit: 4px;
+}
+/*---------------------------------------------------------------------------------------------*/
+/* Estilo personalizado para la barra de desplazamiento */
+::-webkit-scrollbar {
+  position: absolute;
+  width: 8px;
+  transition: border-radius 1s;
+  margin-top: 40px;
+  -webkit-transition: border-radius 1s;
+  -moz-transition: border-radius 1s;
+  -ms-transition: border-radius 1s;
+  -o-transition: border-radius 1s;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+  border-radius: var(--border-radius-webkit);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb:active {
+  border-radius: var(--border-radius-webkit);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-dark);
+}
+/*---------------------------------------------------------------------------------------------*/
+/* Estilos para todos los elementos */
+* {
+  margin: 0; /* Se eliminan los márgenes predeterminados */
+  padding: 0; /* Se eliminan los rellenos predeterminados */
+  scroll-behavior: smooth; /* Comportamiento de desplazamiento suave */
+  box-sizing: border-box;
+}
+/*---------------------------------------------------------------------------------------------*/
+/*  */
 .style-logo {
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--color-white);
   font-size: 1.6rem;
-  font-family: "Gluten-BoldItalic";
+  font-family: var(--logo-font);
   line-height: 1;
   font-style: italic, -moz-italic;
   text-decoration: none;
 }
 
 .style-logo span {
-  color: white;
+  color: var(--color-white);
   margin-left: 5px;
 }
 
 .style-logo-letter {
-  color: rgb(124, 115, 252) !important;
+  color: var(--logo-first-letter-color) !important;
 }
 
 .gluten-bold-italic {
-  font-family: 'Gluten-BoldItalic', sans-serif;
-  font-size: 20px;
+  font-family: var(--logo-font);
+  font-size: var(--font-size);
 }
 
 .cursive {
-  font-family: "Cedarville Cursive", cursive;
+  font-family: var(--primary-font);
 }
 
 .Welcome-text {
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
-    ),
-    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
+  background: var(--gradient-color);
   background-blend-mode: normal, screen;
   -webkit-background-clip: text;
   background-clip: text;
@@ -54,39 +129,28 @@
 }
 
 .Welcome-box {
+  display: flex;
+  position: relative;
   isolation: isolate;
   overflow: hidden;
   align-items: center;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-radius: 32px;
-  box-shadow: inset 0 -7px 11px #a48fff1f;
-  display: flex;
-
-  position: relative;
+  box-shadow: inset 0 -7px 11px var(--shadow-color);
   width: -moz-max-content;
   width: max-content;
   transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
 }
 
 .button-primary {
-  background: linear-gradient(
-      180deg,
-      rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.32) 100%
-    ),
-    rgba(113, 47, 255, 0.12);
-  box-shadow: inset 0 0 12px #bf97ff3d;
+  background: var(--gradient-button-primary);
+  box-shadow: inset 0 0 12px var(--shadow-button-color);
 }
 
 .button-primary:hover {
-  background: linear-gradient(
-      180deg,
-      rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.42) 100%
-    ),
-    rgba(113, 47, 255, 0.24);
-  box-shadow: inset 0 0 12px #bf97ff70;
+  background: var(--gradient-button-primary-hover);
+  box-shadow: inset 0 0 12px var(--button-primary-hover);
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -98,7 +162,4 @@
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
-
-html {
-  scroll-behavior: smooth;
-}
+/*---------------------------------------------------------------------------------------------*/
