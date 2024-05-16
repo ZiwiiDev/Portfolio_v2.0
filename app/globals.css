@@ -116,7 +116,7 @@
   font-size: var(--font-size);
 }
 
-#security .cursive {
+.cursive {
   font-family: var(--primary-font);
 }
 

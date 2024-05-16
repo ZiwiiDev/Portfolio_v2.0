@@ -14,12 +14,12 @@ const Projects = () => {
         <ProjectCard
           src="/portfolio-v1.0.png"
           title="Portfolio v1.0"
-          description="Attractive portfolio with a minimalist style, set in the winter season with artificial snow particles and dark space colors. Adapted to Christmas using simple and intuitive colors."
+          description="Attractive portfolio with a minimalist style, set in the winter season with artificial snow particles and dark space colors. Adapted to Christmas using simple and intuitive colors..."
         />
         <ProjectCard
           src="/peliculas.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="Interactive Movie Cards"
+          description="JQuery application with cards that reference different movies and its content is changed interactively, as well as its actors, user comments about it and a configuration menu..."
         />
       </div>
     </div>
